@@ -1,6 +1,6 @@
 import React from 'react';
 
-function FormContent(props) {
+function ToDoFrom(props) {
     return (
         <form onSubmit={props.handleSubmit}>
             <h2>Add To Do Item</h2>
@@ -44,4 +44,4 @@ function FormContent(props) {
     )
 }
 
-export default FormContent;
+export default ToDoFrom;

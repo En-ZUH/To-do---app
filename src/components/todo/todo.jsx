@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import useForm from "../../hooks/form.js";
-import List from "../List/List.js";
+import useForm from "../../hooks/form";
+import List from "../ToDo-List/ToDo-List";
 //import Header from "../header";
-import FormContent from "../FormContent/FormContent";
-
+import ToDoFrom from "../ToDo-From/ToDo-From";
+//import Footer from "../Footer/Footer";
 import { v4 as uuid } from "uuid";
 
 const ToDo = () => {
@@ -47,9 +47,10 @@ const ToDo = () => {
         <h1>To Do List: {incomplete} items pending</h1>
         <h3>incomplete={incomplete}</h3>
       </header>
-      <FormContent handleChange={handleChange} handleSubmit={handleSubmit} />
+      <ToDoFrom handleChange={handleChange} handleSubmit={handleSubmit} />
 
       <List toggleComplete={toggleComplete} list={list} />
+      {/* <Footer /> */}
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useForm from "../../hooks/form";
-import List from "../ToDo-List/ToDo-List";
+import ToDoList from "../ToDo-List/ToDo-List";
 //import Header from "../header";
 import ToDoFrom from "../ToDo-From/ToDo-From";
 //import Footer from "../Footer/Footer";
@@ -49,7 +49,7 @@ const ToDo = () => {
       </header>
       <ToDoFrom handleChange={handleChange} handleSubmit={handleSubmit} />
 
-      <List toggleComplete={toggleComplete} list={list} />
+      <ToDoList toggleComplete={toggleComplete} list={list} />
       {/* <Footer /> */}
     </>
   );

@@ -1,4 +1,4 @@
-function List(props) {
+function ToDoList(props) {
     return (
 
         props.list.map((item) => (
@@ -20,4 +20,4 @@ function List(props) {
     )
 }
 
-export default List
+export default ToDoList;

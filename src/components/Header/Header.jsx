@@ -1,22 +1,25 @@
-// import React from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom';
+import { Navbar } from 'react-bootstrap';
 
-// export class Header extends React.Component {
+function NavBar(props) {
 
-//     constructor(props) {
-//         super(props)
 
-//         this.state = {
-//             incomplete: props.incomplete
-//         }
-//     }
-//     render() {
-//         return (
-//             <Header>
-//                 <h1>To Do List: {this.state.incomplete} items pending</h1>
-//                 {/* <h3> incomplete={this.state.incomplete}</h3> */}
-//             </Header>
-//         )
-//     }
-// }
+    return (
 
-// export default Header;
+
+        <Navbar bg="primary" variant="primary" expand="lg"
+            style={{
+                marginBottom: "25px", padding: "20px", backgroundColor: "rgb(34,123,255)"
+            }}
+        >
+            <Link to='/' style={{ padding: "15px", color: "white" }}>Home</Link>
+            <Link to='/settings' style={{ padding: "15px", color: "white" }}>Settings</Link>
+        </Navbar>
+
+
+
+    )
+}
+
+export default NavBar

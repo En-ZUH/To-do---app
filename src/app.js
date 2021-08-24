@@ -1,11 +1,21 @@
 import React from 'react';
+//import Footer from './components/Footer/Footer';
+//import Header from './components/Header/Header';
+import ToDo from './components/todo/todo.jsx';
+import ListContext from './context/settingsContext';
 
-import ToDo from './components/todo/todo';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <ToDo />
-    );
-  }
+function App() {
+  return (
+    <>
+      {/* <Header /> */}
+      <ListContext>
+        <ToDo />
+      </ListContext>
+      {/* <Footer /> */}
+    </>
+  );
 }
+
+export default App;
+
